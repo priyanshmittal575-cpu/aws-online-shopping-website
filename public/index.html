@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusGear | Student Tech Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-row">
+      <h1>Campus<span>Gear</span> Store</h1>
+      <div class="filters">
+        <input type="text" id="searchBox" placeholder="Search gadgets..." />
+        <select id="catFilter">
+          <option value="All">All Categories</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Workspace">Workspace</option>
+          <option value="Electronics">Electronics</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container shop-grid">
+    <section id="productGrid" class="products"></section>
+
+    <aside class="cart-box">
+      <h2>Your Cart</h2>
+      <div id="cartList" class="cart-list"><p class="muted">Cart is empty.</p></div>
+      <div class="total-line"><span>Total Amount:</span><strong id="totalPrice">₹0</strong></div>
+      <input type="text" id="buyerName" placeholder="Your Full Name for Order" class="buyer-input" />
+      <button id="checkoutBtn" class="checkout-btn" disabled>Simulate Checkout</button>
+      <p id="orderReceipt" class="receipt hidden"></p>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
